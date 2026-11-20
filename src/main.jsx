@@ -4,12 +4,20 @@ import ReactDOM from 'react-dom/client'
 
 import App from './App.jsx'
 
-// Estilos principales
+// ========================================
+// ESTILOS DEL PROYECTO — REY RUFINO 👑
+// ========================================
+
 import './styles/variables.css'
 import './styles/global.css'
 import './styles/components.css'
 import './styles/sections.css'
+import './styles/responsive.css'
 import './styles/animations.css'
+
+// ========================================
+// INICIO DE LA APLICACIÓN
+// ========================================
 
 ReactDOM.createRoot(
   document.getElementById('root')
