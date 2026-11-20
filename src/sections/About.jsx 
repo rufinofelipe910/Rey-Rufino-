@@ -1,0 +1,98 @@
+
+function About() {
+  const highlights = [
+    {
+      number: '01',
+      title: 'Creatividad',
+      description: 'Transformar ideas en experiencias digitales.'
+    },
+    {
+      number: '02',
+      title: 'Innovación',
+      description: 'Explorar nuevas tecnologías y posibilidades.'
+    },
+    {
+      number: '03',
+      title: 'Ambición',
+      description: 'Aprender, evolucionar y superar límites.'
+    }
+  ]
+
+  return (
+    <section className="about section-padding" id="about">
+      <div className="container">
+        <div className="section-heading animate-up">
+          <span className="section-eyebrow">CONOCE MI HISTORIA</span>
+
+          <h2>
+            Más allá de lo
+            <span className="text-gradient"> digital.</span>
+          </h2>
+
+          <p>
+            Una visión, una mentalidad y un universo de posibilidades.
+          </p>
+        </div>
+
+        <div className="about-grid">
+          <div className="about-visual animate-left">
+            <div className="about-frame">
+              <div className="about-frame-content">
+                <span className="about-symbol">♛</span>
+                <h3>REY RUFINO</h3>
+                <span className="about-frame-line"></span>
+                <p>CREATIVITY · TECHNOLOGY · FUTURE</p>
+              </div>
+              <span className="about-corner about-corner-top"></span>
+              <span className="about-corner about-corner-bottom"></span>
+            </div>
+          </div>
+
+          <div className="about-content animate-up">
+            <span className="about-mini-label">
+              <span>👑</span> MI IDENTIDAD
+            </span>
+
+            <h3>
+              Construyendo mi camino
+              <span className="text-gradient"> hacia el futuro.</span>
+            </h3>
+
+            <p>
+              Soy Rey Rufino, una persona apasionada por la tecnología,
+              la creatividad y el potencial que ofrece el mundo digital.
+            </p>
+
+            <p>
+              Me interesa descubrir nuevas herramientas, desarrollar
+              ideas y convertir la imaginación en proyectos que puedan
+              generar un impacto positivo.
+            </p>
+
+            <p>
+              Creo que el futuro pertenece a quienes se atreven a
+              aprender, experimentar y crear.
+            </p>
+
+            <div className="about-highlights">
+              {highlights.map((item) => (
+                <div className="about-highlight" key={item.number}>
+                  <span className="about-highlight-number">
+                    {item.number}
+                  </span>
+
+                  <div>
+                    <h4>{item.title}</h4>
+                    <p>{item.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+export default About
