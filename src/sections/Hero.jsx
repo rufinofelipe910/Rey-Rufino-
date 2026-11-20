@@ -57,14 +57,23 @@ function Hero() {
           <div className="hero-orbit hero-orbit-one"></div>
           <div className="hero-orbit hero-orbit-two"></div>
 
-          <div className="hero-emblem">
-            <div className="hero-emblem-inner">
-              <span className="hero-crown">♛</span>
-              <span className="hero-emblem-name">RR</span>
-              <span className="hero-emblem-caption">
-                ROYAL CYBER
-              </span>
-            </div>
+          <div className="hero-avatar-frame">
+            <img
+              src="/images/rey-rufino.jpg"
+              alt="Foto de perfil de Rey Rufino"
+              className="hero-avatar"
+              style={{
+                width: 'min(75vw, 340px)',
+                aspectRatio: '1 / 1',
+                objectFit: 'cover',
+                objectPosition: 'center',
+                borderRadius: '50%',
+                border: '4px solid #55D9FF',
+                boxShadow: '0 0 25px #55D9FF88, 0 0 55px #9865FF66'
+              }}
+            />
+
+            <span className="hero-avatar-crown">👑</span>
           </div>
 
           <span className="hero-floating-text hero-floating-top">
