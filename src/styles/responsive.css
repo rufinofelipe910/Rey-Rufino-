@@ -1,0 +1,171 @@
+
+/* ========================================
+   RESPONSIVE — REY RUFINO 👑
+   ======================================== */
+
+/* TABLETAS Y PANTALLAS MEDIANAS */
+
+@media (max-width: 1024px) {
+  .container {
+    width: min(100% - 40px, 900px);
+  }
+
+  .hero-container {
+    gap: 25px;
+  }
+
+  .hero-orbit {
+    width: 330px;
+    height: 330px;
+  }
+
+  .about-grid {
+    gap: 40px;
+  }
+
+  .contact-wrapper {
+    padding: 40px;
+  }
+}
+
+/* MÓVILES */
+
+@media (max-width: 768px) {
+  .container {
+    width: min(100% - 32px, 600px);
+  }
+
+  .section-heading {
+    margin-bottom: 38px;
+  }
+
+  .section-heading h2 {
+    font-size: clamp(2rem, 8vw, 2.7rem);
+  }
+
+  .hero-container,
+  .about-grid,
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-content,
+  .contact-content {
+    text-align: center;
+  }
+
+  .hero-actions,
+  .hero-social,
+  .contact-actions,
+  .contact-social {
+    justify-content: center;
+  }
+
+  .hero-visual {
+    min-height: 340px;
+  }
+
+  .about-frame {
+    min-height: 280px;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-visual {
+    min-height: 210px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* MÓVILES PEQUEÑOS */
+
+@media (max-width: 480px) {
+  .container {
+    width: calc(100% - 28px);
+  }
+
+  .section-padding {
+    padding: 65px 0;
+  }
+
+  .hero {
+    padding-top: 110px;
+  }
+
+  .hero-name {
+    font-size: 2.7rem;
+    letter-spacing: -2px;
+  }
+
+  .hero-label {
+    font-size: 0.7rem;
+  }
+
+  .hero-description {
+    font-size: 0.9rem;
+  }
+
+  .hero-visual {
+    min-height: 290px;
+  }
+
+  .hero-orbit {
+    width: 250px;
+    height: 250px;
+  }
+
+  .hero-orbit-two {
+    width: 220px;
+    height: 310px;
+  }
+
+  .hero-floating-text {
+    padding: 8px 11px;
+    font-size: 0.7rem;
+  }
+
+  .about-highlights {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-card {
+    padding: 20px;
+  }
+
+  .experience-content {
+    padding: 18px;
+  }
+
+  .contact-wrapper {
+    padding: 25px 16px;
+  }
+
+  .contact-orbit {
+    width: 175px;
+    height: 175px;
+  }
+
+  .contact-orbit-inner {
+    width: 120px;
+    height: 120px;
+    font-size: 3rem;
+  }
+}
+
+/* ACCESIBILIDAD: REDUCIR MOVIMIENTO */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
