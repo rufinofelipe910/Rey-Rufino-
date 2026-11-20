@@ -1,0 +1,73 @@
+
+:root {
+  /* ROYAL CYBER COLOR PALETTE */
+
+  --color-background: #090B13;
+  --color-background-secondary: #101422;
+  --color-surface: #151B2B;
+
+  --color-primary: #55D9FF;
+  --color-secondary: #9865FF;
+  --color-accent: #D8B66A;
+
+  --color-text: #F5F7FF;
+  --color-text-secondary: #A5AEC2;
+  --color-muted: #69748A;
+
+  --color-border: rgba(255, 255, 255, 0.09);
+
+  /* GRADIENTS */
+
+  --gradient-primary: linear-gradient(
+    135deg,
+    #55D9FF,
+    #9865FF
+  );
+
+  --gradient-royal: linear-gradient(
+    135deg,
+    #D8B66A,
+    #FFF0B5
+  );
+
+  /* TYPOGRAPHY */
+
+  --font-primary: 'Inter', sans-serif;
+  --font-display: 'Space Grotesk', sans-serif;
+
+  /* FONT SIZES */
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.5rem;
+  --text-2xl: 2rem;
+  --text-3xl: 3rem;
+  --text-hero: clamp(3rem, 8vw, 6.5rem);
+
+  /* SPACING */
+
+  --container-width: 1200px;
+  --section-spacing: 120px;
+  --navbar-height: 80px;
+
+  /* BORDERS */
+
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-full: 999px;
+
+  /* EFFECTS */
+
+  --shadow-neon: 0 0 30px rgba(85, 217, 255, 0.15);
+
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.35s ease;
+
+  /* LAYERS */
+
+  --z-navbar: 1000;
+  --z-overlay: 2000;
+}
