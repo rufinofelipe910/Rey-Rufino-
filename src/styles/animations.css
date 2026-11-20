@@ -1,0 +1,175 @@
+
+/* ========================================
+   REY RUFINO - ANIMATIONS
+   ROYAL CYBER EXPERIENCE
+======================================== */
+
+/* FADE IN */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* SLIDE UP */
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* SLIDE LEFT */
+
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* FLOATING EFFECT */
+
+@keyframes floating {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+/* NEON PULSE */
+
+@keyframes neonPulse {
+  0%, 100% {
+    opacity: 0.7;
+    box-shadow: 0 0 15px rgba(85, 217, 255, 0.15);
+  }
+
+  50% {
+    opacity: 1;
+    box-shadow: 0 0 35px rgba(85, 217, 255, 0.4);
+  }
+}
+
+/* ROTATING GRADIENT */
+
+@keyframes rotateGradient {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* TEXT REVEAL */
+
+@keyframes textReveal {
+  from {
+    opacity: 0;
+    clip-path: inset(0 100% 0 0);
+  }
+
+  to {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+/* ANIMATION UTILITIES */
+
+.animate-fade {
+  animation: fadeIn 0.8s ease both;
+}
+
+.animate-up {
+  animation: slideUp 0.8s ease both;
+}
+
+.animate-left {
+  animation: slideLeft 0.8s ease both;
+}
+
+.animate-float {
+  animation: floating 4s ease-in-out infinite;
+}
+
+.animate-neon {
+  animation: neonPulse 3s ease-in-out infinite;
+}
+
+.animate-reveal {
+  animation: textReveal 1s ease both;
+}
+
+/* STAGGERED ANIMATIONS */
+
+.delay-1 {
+  animation-delay: 0.2s;
+}
+
+.delay-2 {
+  animation-delay: 0.4s;
+}
+
+.delay-3 {
+  animation-delay: 0.6s;
+}
+
+.delay-4 {
+  animation-delay: 0.8s;
+}
+
+/* HOVER EFFECTS */
+
+.hover-lift {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(85, 217, 255, 0.12);
+}
+
+.hover-glow {
+  transition: box-shadow 0.3s ease;
+}
+
+.hover-glow:hover {
+  box-shadow: 0 0 25px rgba(152, 101, 255, 0.3);
+}
+
+/* ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade,
+  .animate-up,
+  .animate-left,
+  .animate-float,
+  .animate-neon,
+  .animate-reveal {
+    animation: none;
+  }
+}
