@@ -4,8 +4,10 @@ import ReactDOM from 'react-dom/client'
 
 import App from './App.jsx'
 
+// Estilos principales
 import './styles/variables.css'
 import './styles/global.css'
+import './styles/components.css'
 import './styles/animations.css'
 
 ReactDOM.createRoot(
