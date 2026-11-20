@@ -6,11 +6,16 @@ function Projects() {
     {
       title: 'WAGURI BOT',
       description:
-        'Un bot de WhatsApp diseñado para automatizar y mejorar tu experiencia en WhatsApp. Permite descargar canciones y vídeos de YouTube, Instagram, Facebook y TikTok. También incluye diversos juegos y funciones para disfrutar de una experiencia más completa.',
+        'Waguri Bot es un bot de WhatsApp que te ayuda a automatizar tu WhatsApp. Permite descargar canciones y vídeos de YouTube, Instagram, Facebook y TikTok. También cuenta con diversos juegos y funciones de entretenimiento.',
+      image: '/images/waguri-bot.jpg',
       technologies: [
         'WhatsApp',
         'Automatización',
         'Descargas multimedia',
+        'YouTube',
+        'Instagram',
+        'Facebook',
+        'TikTok',
         'Juegos'
       ],
       demoUrl:
