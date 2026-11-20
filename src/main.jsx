@@ -8,6 +8,7 @@ import App from './App.jsx'
 import './styles/variables.css'
 import './styles/global.css'
 import './styles/components.css'
+import './styles/sections.css'
 import './styles/animations.css'
 
 ReactDOM.createRoot(
